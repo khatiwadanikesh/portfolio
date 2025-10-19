@@ -3,17 +3,99 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Personal Information</title>
+  <title>Nikesh Portfolio</title>
   <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-100 flex items-center justify-center min-h-screen">
-  <div class="max-w-2xl w-full bg-white shadow-lg rounded-xl border border-gray-200 p-8 mx-4">
-    <h2 class="text-3xl font-semibold text-center text-gray-800 mb-4">About Me</h2>
-    <p class="text-gray-600 leading-relaxed text-justify">
-      Hi, I'm <strong class="text-indigo-600">Nikesh Khatiwada</strong>, an IT student passionate about creating clean, responsive, and user-friendly web interfaces.
-      I enjoy turning ideas into functional digital experiences using modern web technologies.
-      Currently, I’m improving my front-end development skills and working on personal projects to build a strong portfolio.
-    </p>
-  </div>
+<body class="bg-gray-100 text-gray-800 ">
+
+  <!-- Navbar -->
+  <nav class="bg-white shadow-md sticky top-0 z-50 max-w-3xl mx-auto rounded-xl mt-0">
+    <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center ">
+      <h1 class="text-2xl font-bold text-blue-500">Nikesh</h1>
+      <ul class="hidden md:flex space-x-6 font-medium text-gray-700">
+        <li><a href="#about" class="text-blue-500 underline">About</a></li>
+        <li><a href="#skills" class="text-blue-500 underline">Skills</a></li>
+        <li><a href="#research" class="text-blue-500 underline">Research</a></li>
+        <li><a href="#contact" class="text-blue-500 underline">Contact</a></li>
+      </ul>
+      <!-- Mobile Menu Button -->
+      <button class="md:hidden text-gray-700 focus:outline-none text-2xl">
+        ☰
+      </button>
+    </div>
+  </nav>
+
+  <!-- Content Container -->
+  <main class="max-w-3xl mx-auto bg-white p-8 shadow-lg border border-gray-200 rounded-xl mt-1 space-y-12">
+
+    <!-- About Section -->
+    <section id="about">
+      <h2 class="text-3xl font-semibold text-center mb-4">About Me</h2>
+      <p class="text-gray-600 leading-relaxed text-justify">
+        Hi, I'm <span class="font-medium">Nikesh Khatiwada</span>, an IT student passionate about creating clean, responsive, and user-friendly web interfaces.
+        I enjoy turning ideas into functional digital experiences using modern web technologies.
+        Currently, I’m improving my front-end development skills and working on personal and research projects to build a strong portfolio.
+      </p>
+    </section>
+   <!-- Skills Section -->
+<section id="skills">
+  <h2 class="text-3xl font-semibold text-center mb-4 mt-8">Skills</h2>
+  <ul class="grid grid-cols-2 gap-3 text-gray-700 text-center">
+    <li>HTML5 & CSS3</li>
+    <li>Tailwind CSS</li>
+    <li>JavaScript (ES6+)</li>
+    <li>React.js (with Vite)</li>
+    <li>Git & GitHub</li>
+    <li>UI/UX Design</li>
+    <li>Arduino & Embedded Systems</li>
+    <li>SQL & Database Management</li>
+    <li>Problem Solving & Debugging</li>
+    <li>Responsive Web Design</li>
+  </ul>
+</section>
+    <!-- Research Projects Section -->
+    <section id="research">
+      <h2 class="text-3xl font-semibold text-center mb-4 mt-8">Research Projects</h2>
+      <div class="grid md:grid-cols-2 gap-8">
+
+        <!-- TRNG Project -->
+        <div>
+          <h3 class="text-xl font-semibold mb-2">True Random Number Generator (TRNG)</h3>
+          <p class="text-gray-600 mb-3 text-justify">
+            A research project combining <strong>acoustic noise</strong> and <strong>ambient light signals</strong> as dual entropy sources to generate high-quality random numbers for cryptography.
+          </p>
+          <a href="trng.html" target="_blank" class="text-blue-500 font-medium hover:underline">View Details →</a>
+        </div>
+
+        <!-- LunaQuake Project -->
+        <div>
+          <h3 class="text-xl font-semibold mb-2">LunaQuake – Moonquake Analysis</h3>
+          <p class="text-gray-600 mb-3 text-justify">
+            A research-based data visualization project that analyzes historical lunar seismic data to study moonquake patterns and magnitudes using computational tools and visualization techniques.
+          </p>
+          <a href="lunaquake.html" target="_blank" class="text-blue-500 font-medium hover:underline">View Details →</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact">
+      <h2 class="text-3xl font-semibold text-center mb-4 mt-8">Contact Me</h2>
+      <form class="space-y-4">
+        <input type="text" placeholder="Your Name" class="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-indigo-400" />
+        <input type="email" placeholder="Your Email" class="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-400" />
+        <textarea rows="4" placeholder="Your Message" class="w-full border border-gray-300 rounded-lg p-2 focus:outline-none focus:ring-2 focus:ring-blue-400"></textarea>
+        <button type="submit" class="text-blue-500 underline">Send Message</button>
+      </form>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="bg-white shadow-md text-gray-600 text-center py-2 mt-1 max-w-3xl mx-auto rounded-xl">
+    © 2025 Nikesh Khatiwada. All rights reserved.
+  </footer>
+
 </body>
 </html>
