@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LunaQuake - NASA Space Apps Challenge 2023</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 text-gray-800">
+
+  <!-- Container -->
+  <main class="max-w-4xl mx-auto bg-white p-8 shadow-lg border border-gray-200 rounded-xl mt-6 mb-10 space-y-6">
+
+    <header class="text-center">
+      <h1 class="text-3xl font-semibold mb-2">LunaQuake - NASA Space Apps Challenge 2023</h1>
+      <p class="text-gray-600 italic">a project to visualize seismic activities on the moon</p>
+    </header>
+
+    <section>
+      <h2 class="text-2xl font-semibold mb-2">High Level Summary:</h2>
+      <div class="relative pb-[56.25%] h-0 overflow-hidden rounded-lg shadow-md">
+        <iframe
+          loading="lazy"
+          class="absolute top-0 left-0 w-full h-full border-0"
+          src="https://www.canva.com/design/DAFw4UTfdDA/T6NTgydF7v1v5KeDZ17iYQ/view?embed"
+          allowfullscreen
+        ></iframe>
+      </div>
+      <p class="mt-4 text-justify">
+        Our moon has been visited by US-Apollo missions from 1968-1972, the
+        seismic data retrieved from them has been visualized in a 3D environment
+        but they lack a lot of functionalities for effective data analysis.
+        Hence, we have developed an interactive 3D seismic event viewer app
+        plotting animated seismic waves on a 3D globe of the Moon. We provide a
+        user-friendly UI for exploring moonquakes and detailed information on
+        historical seismic activities which is beneficial for analysts and moon
+        enthusiasts.
+      </p>
+
+      <div class="mt-4 space-y-2">
+        <p><strong>Project Demo:</strong> <a href="https://www.youtube.com/watch?v=NcaKNJ8wEtc" target="_blank" class="text-blue-500 underline hover:text-blue-700">Watch on YouTube</a></p>
+        <p><strong>Final Project:</strong> <a href="https://bit.ly/lunaquake" target="_blank" class="text-blue-500 underline hover:text-blue-700">Access the Project</a></p>
+      </div>
+    </section>
+
+    <section>
+      <h2 class="text-2xl font-semibold mb-2">Project Description:</h2>
+      <p class="text-justify">
+        “LunaQuake” is a project that is built upon the legacy of the Apollo
+        missions. While the Apollo missions laid the foundation for lunar
+        exploration, our project takes it further by enhancing our ability to
+        analyze and understand the Moon's seismic activities.
+      </p>
+
+      <p class="text-justify mt-2">
+        This project allows users to get an interactive three-dimensional
+        visualization of the moon to analyze seismic activity. Our web app
+        welcomes visitors with a splash screen by “The Catalysts”. Our project
+        collects data from all the Apollo missions and depicts them into
+        user-friendly traversal patterns.
+      </p>
+
+      <p class="text-justify mt-2">
+        The data is classified as per the Apollo missions i.e. Apollo-11, 12,
+        14, 15, 16. On click, the moon immediately rotates to exactly face the
+        coordinates of the landing site of the mission. A brief information
+        about the mission date, and coordinates of the landing (latitude and
+        longitude) along with the seismometer’s description is provided. Users
+        can also evaluate in-depth seismic activities on an exact day of the
+        year. MH1, MH2, and Mhz can be studied by researchers, and they can
+        visit the official NASA site through our app.
+      </p>
+
+      <img src="./assets/sc1_lunaquake.png" alt="lunaquake 1" class="rounded-lg shadow-md my-4" />
+
+      <p class="text-justify">
+        27 moonquakes that occurred on the surface of the moon are presented and
+        can be pin-pointed to their exact epicenters along with their
+        magnitudes. The “moon controls” tab includes three types of moon views
+        namely geographical, topographical, and elevation. The rotation speed of
+        the moon can also be adjusted for dramatic effect. A “Clear” button is
+        provided to return to the default mode of the moon.
+      </p>
+
+      <img src="./assets/sc2_lunaquake.png" alt="lunaquake 2" class="rounded-lg shadow-md my-4" />
+
+      <h3 class="text-xl font-semibold mt-4">Technologies Used:</h3>
+      <ul class="list-disc list-inside text-gray-700 ml-4">
+        <li>React JS (Vite) for Frontend</li>
+        <li>Obspy to process seismic data from Apollo missions</li>
+        <li>ThreeJS (globe.gl) to render Moon</li>
+        <li>VSCode as an IDE</li>
+        <li>Git and GitHub for version control</li>
+      </ul>
+
+      <h3 class="text-xl font-semibold mt-4">Space Agency Data</h3>
+      <ul class="list-disc list-inside text-gray-700 ml-4">
+        <li>NASA Apollo 11 Passive Seismic Experiment (part of EASEP package)</li>
+        <li>Full Apollo EASEP and ALSEP descriptions</li>
+        <li>NASA's Planetary Data System (PDS)</li>
+        <li>Scientific Visualization Studio Computer Generated Imagery (CGI) Moon Kit</li>
+      </ul>
+
+      <h3 class="text-xl font-semibold mt-4">References:</h3>
+      <ul class="list-disc list-inside text-gray-700 ml-4">
+        <li>Geological Digressions</li>
+        <li>Solar System Scope</li>
+        <li>Astrology</li>
+      </ul>
+    </section>
+
+    <div class="text-center mt-10">
+      <a href="index.html#research" class="text-blue-500 underline hover:text-blue-700">
+        ← Back to Portfolio
+      </a>
+    </div>
+
+  </main>
+
+</body>
+</html>
