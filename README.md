@@ -6,7 +6,7 @@ It highlights my background, skills, research projects, and provides a simple wa
 
 Technologies Used
 
-HTML5
-Tailwind CSS
-JavaScript (Vanilla)
+HTML5,
+Tailwind CSS,
+JavaScript (Vanilla),
 Formspree (for contact form)
